@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Verdana;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+#form-container {
+    display: flex;
+    justify-content: center;
+}
+#name {
+    width: 90%;
+    top: 15vh;
+    position: absolute;
+}
+#info {
+    position: absolute;
+    top: 20vh;
+    width: 90%;
+}
+#senden {
+    background-color: blue;
+    width: 90%;
+    height: 5vh;
+    border-radius: 0.8vh;
+    color: white;
+    font-size: x-large;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
