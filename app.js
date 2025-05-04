@@ -22,10 +22,12 @@ function sendTelegramMessage(message) {
     })
 }
 function klick_button() {
-    const name = document.getElementById('name').value;
-    const info = document.getElementById('info').value;
-    sendTelegramMessage(`Ich heiße ${name}`);
+    const name = document.getElementById('name');
+    const info = document.getElementById('info');
+    sendTelegramMessage(`Ich heiße ${name.value}`);
     setTimeout(function() {
-        sendTelegramMessage(`Informationen: ${info}`);
+        sendTelegramMessage(`Informationen: ${info.value}`);
     }, 1000);
+    name.value = '';
+    info.value = '';
 }
