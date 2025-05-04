@@ -27,7 +27,8 @@ function klick_button() {
     sendTelegramMessage(`Ich heiße ${name.value}`);
     setTimeout(function() {
         sendTelegramMessage(`Informationen: ${info.value}`);
+        name.value = '';
+        info.value = '';
     }, 1000);
-    name.value = '';
-    info.value = '';
+
 }
